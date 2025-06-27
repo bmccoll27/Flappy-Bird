@@ -275,6 +275,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   killZone: -45
+  scaler: 2
+  increment: 5
+  logic: {fileID: 0}
 --- !u!1 &9014785000815178693
 GameObject:
   m_ObjectHideFlags: 0

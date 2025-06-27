@@ -4,19 +4,22 @@ public class PipwSpwanerScript : MonoBehaviour
 {
 
     public GameObject pipe;
-    public float spwanRate = 4;
+    
     public float timer = 0;
     public float pipeOffSet = 10;
+    private LogicScript logic;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SpwanPipe();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer < spwanRate)
+        if (timer < logic.spwanRate)
         {
             timer += Time.deltaTime;
         }
