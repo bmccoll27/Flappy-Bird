@@ -70,7 +70,9 @@ public class LogicScript : MonoBehaviour
 
     public void IncreaseSpawnRate()
     {
-        spwanRate -= 0.5;
+        if (spwanRate > 1.5) {
+            spwanRate -= 0.5;
+        }
     }
     void Update()
     {
